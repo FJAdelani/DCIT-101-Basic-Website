@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+	<meta charset="UTF-8">
+	<meta name="description" content="This is my website project"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gabe's Website</title> 
+  </head>
+ 
+	<style>
+	
+	  body {
+  color: #ffffff;
+  background:  #050609;
+	}
+  
+	nav ul {
+	list-style-type: none;
+	}
+	
+	nav ul li {
+	  float: left;
+	  margin-top: 10px;
+	  transform: scale(1) translate(-50%, -100%);
+	}
+	
+	nav ul li a {
+	padding: 3em 1em 0.5em 1em;
+	text-decoration: none ;
+	background-color: #050609;
+	color: #ffffff;
+	border-width: 1px;
+	border-style: solid; 
+	border-color: #050609;
+	border-radius:0em;
+	padding-top: 100%;
+	}
+	
+	nav ul li a:hover, nav ul li a:focus {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+	}
+
+	h2 {
+	text-align: center;
+	color: #ffffff;
+	font-size: 45px;
+	width: 400px;
+	height: 100px;
+	position: relative;
+	animation: about;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-direction: reverse;
+	clear: left;
+	}
+
+@keyframes about {
+  0%   {left: 0px; top: 0px;}
+  100%  {left: 100px; top: 0px;}
+}
+	
+	.biography-info {
+	position: fixed;
+	float: right;
+	z-index: 1;
+	margin-left: 0.5em;
+	margin-right: 30%;
+	padding-bottom: 28px;
+	text-align: center;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	animation: biography;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-direction: reverse;	
+	}
+	@keyframes biography {
+  0%   {margin-right: 30%; top: 210px;}
+  100%  {margin-right: 30%; top: 0px;}
+}
+	
+	.regular-image {
+	position: relative;
+	z-index: 1;
+	left: 1px;
+	top: 0px;
+	float: left;
+	width: 300px;
+	border-color: white;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 5px;
+	animation: image;
+	animation-duration: 2.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-direction: reverse;
+}
+	
+	@keyframes image {
+  0%   {left: 0px; top: 0px;}
+  100%  {left: 0px; top: 100px;}
+}
+
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.media{
+    color: #fff; 
+    word-spacing: 13px; 
+    transform: translate(80%, 40%) scale(200%, 200%);
+	position: fixed;
+ 	bottom: 5%;
+}
+
+div ion-icon:hover {
+	border-width: 3px;
+	border-color: #050609;
+}
+
+#fff {
+    color: #fff;
+}
+	
+	.split {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  overflow-x: show;
+  padding-top: 0px;
+	}
+
+.left {
+  left: 10px;
+	}
+
+.right {
+  right: 0;
+  background-color: teal;
+  background-image: url("picture2.png");
+  height: vh;
+  animation: fadeIn linear 3s;
+	}
+
+ @keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  }
+
+
+.centered {
+  position: fixed;
+  top: 0%;
+  left: 10px;
+	}
+
+	</style>
+
+  <body>
+	
+		<div class="split left class=""">
+		<div class="centered">
+	<header style="color: white";>
+	 <nav id="nav">
+		 <ul>	
+			<li><a href="index.html">Home</a></li>
+			<li><a href="page1.html">About</a></li>
+		</ul>	
+		 </nav>
+		 <br>
+	 		<h2><b><big>ABOUT ME</big></b></h2>
+	</header>
+	
+	<main>
+<section>
+	
+<img class="regular-image" src="wall.jpeg">
+				<span class="biography-info">My name is <big><big><b><i>Adelani Frimpong</big></b></i></big> and I am a student of UG. <br>
+		I aim to become an accomplished coder and programmer to use my skills to contribute to exciting technological advances that happen every day<br>
+		I graduated from Senior High School in 2021 with a High School Certificate in General Science.<br> 
+		While in school, I earned Awards for my exemplary bare average academic performance and handball skills.</span>
+   
+		</div>
+	</div>
+
+	<div class="split right">
+		<div class="centered">
+		
+	 </section>
+	</main>
+
+	<footer>
+		<div class="media">
+			<a href="#" id="fff"><ion-icon name="logo-facebook"></ion-icon></a>
+			<a href="#" id="fff"><ion-icon name="logo-instagram"></ion-icon></a>
+			<a href="#" id="fff"><ion-icon name="logo-twitter"></ion-icon></a>
+			<a href="#" id="fff"><ion-icon name="logo-google"></ion-icon></a>
+			<a href="#" id="fff"><ion-icon name="logo-skype"></ion-icon></a>
+		</div>
+		
+	</footer>
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

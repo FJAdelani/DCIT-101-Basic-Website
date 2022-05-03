@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  
+  <style>
+	
+	 body {
+  margin-left: 10px;
+  color: #ffffff;
+  background:  #050609;
+  animation: fadebackground;
+  animation-duration: 7s;
+	}
+@keyframes fadebackground {
+  from {background-color: #191919;}
+  to {background-color: #050609 ;}
+	}
+  
+	nav ul {
+	list-style-type: none;
+	}
+	
+	nav ul li {
+	  float: left;
+	  margin-top: 10px;
+	  transform: scale(1) translate(-50%, -100%);
+	}
+	
+	nav ul li a {
+	padding: 3em 1em 0.5em 1em;
+	text-decoration: none ;
+	background-color: #050609;
+	color: #ffffff;
+	border-width: 1px;
+	border-style: solid; 
+	border-color: #050609;
+	border-radius:0em;
+	padding-top: 100%;
+	clear: left;
+	}
+	
+	nav ul li a:hover, nav ul li a:focus {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+	}
+	
+	
+	h2 {
+	text-align: center;
+	color: #ff0066;
+	font-size: 60px;
+	font-family: Corsiva;
+	clear: left;
+	}
+	
+	/* Animated heading intro */
+	.fade-in-text {
+  font-family: Bite Chocolate, Helvetica, sans-serif;
+  font-size: 60px;
+  color: #ff0066;
+  animation: fadeIn linear 4s;
+}
+
+	
+	@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+  from {color: #000000 ;}
+  to {color: #ffffff ;}
+}
+
+	p {
+	text-align: center;
+	font-size: 30px;
+	font-family: Times New Roman;
+	}
+ 
+ </style>
+ 
+ <head> 
+	<meta charset="UTF-8">
+	<meta name="description" content="This is my website project"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gabe's Website</title> 
+  </head>
+  
+ <body>
+	
+<header>
+	 <nav>
+		 <ul>	
+			<li><a href="index.html">Home</a></li>
+			<li><a href="page1.html">About</a></li>
+	 	</ul>	
+	 </nav>
+	 <br/>
+	 <h2 class="fade-in-text"><b><big>HELLO THERE!</big></b></h2>
+	    <br/>
+	 
+	</header>
+	
+	<main>
+		<article>
+	  
+	 	 <section>	
+		<p> WELCOME TO MY WEBSITE!</p>
+		<br/>
+	    </section>
+	  
+	</article>
+	</main>
+  </body>
+</html>
